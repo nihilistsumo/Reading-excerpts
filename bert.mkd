@@ -1,1 +1,19 @@
-BERT paper
+# BERT paper
+
+## What is it trying to do?
+
+It is trying to represent language through a model. The key difference between this model and it's predecessors is that it takes into account the bidirectional nature of any linguistic expression. Thus the learned model depends on both left and right context of a term. Then the model is put to use to solve many NLP tasks. The results supports the effectiveness of bidirectional language model.
+
+## Technical stuff
+
+Feature based: The output of the model is used as a feature
+
+Fine tuning parameters: Existing parameters used in the model is adjusted based on a task. This approach is more efficient since we do not need to come up with task specific feature set. Also this makes the model more general where it can be used in many other tasks as well with minimum task specific changes. 
+
+## Inspiration
+
+
+
+## How does this paper relate to the lab
+
+Paragraph similarity task: Results show that BERT model performs exceptionally well in next sentence prediction task with SWAG dataset surpassing the previous baseline by significant margin (27%). We can model our paragraph similarity task in form of a next paragraph prediction task where the model has to choose one or more paragraphs similar to a key paragraph and apply BERT model.
